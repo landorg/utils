@@ -8,6 +8,7 @@
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
 // @downloadURL  https://raw.githubusercontent.com/landorg/utils/refs/heads/main/scoring.js
+// @updateURL  https://raw.githubusercontent.com/landorg/utils/refs/heads/main/scoring.js
 // @connect      * // Necessary for GM_xmlhttpRequest to fetch from the origin serving the IGC files (use specific domain(s) if possible for security, e.g., @connect scoring.paragleiter.org)
 // ==/UserScript==
 
@@ -16,7 +17,7 @@
 
     // --- Configuration ---
     // Delay in milliseconds between initiating each file *fetch* and download. Increase if hitting rate limits.
-    const downloadDelay = 500; // ms - Increased delay slightly due to fetch+download steps
+    const downloadDelay = 150; // ms - Increased delay slightly due to fetch+download steps
     // Selector for the result tables
     const tableSelector = 'table.result';
     // --- End Configuration ---
